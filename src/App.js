@@ -1,27 +1,30 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import "./styles.css";
+import ContactCard from "./components/contact-card";
 
 const App = () => {
+  const [contacts, setContacts] = useState([]);
+
+  useEffect(() => {
+    fetch("https://randomuser.me/api/?results=3")
+      .then(response => response.json())
+      .then(data => {
+        setContacts(data.results);
+      });
+  }, []);
+
   return (
     <>
-      <ContactCard />
-      <ContactCard />
-      <ContactCard />
+      {contacts.map(contact => (
+        <ContactCard
+          avatar={contact.picture.large}
+          name={contact.name.first + " " + contact.name.last}
+          email={contact.email}
+          age={contact.dob.age}
+        />
+      ))}
     </>
   );
-}
+};
 
 export default App;
-
-const ContactCard = () => {
-  return (
-    <div className="contact-card">
-      <img src="https://via.placeholder.com/150" alt="profile" />
-      <div className="user-details">
-        <p>Name: Jenny Han</p>
-        <p>Email: Jenny.Han@notreal.com</p>
-        <p>Age: 25</p>
-      </div>
-    </div>
-  );
-};
