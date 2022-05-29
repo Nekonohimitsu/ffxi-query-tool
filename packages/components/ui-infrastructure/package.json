@@ -1,14 +1,14 @@
 {
-  "name": "@ffxi-query-tool/first-component",
+  "name": "@ffxi-query-tool/ui-infrastructure",
   "version": "1.0.0",
-  "description": "An example component",
+  "description": "Component houses the framework of the UI",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.esm.js",
   "scripts": {
     "test": "jest --config jestconfig.json --coverage",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
-    "document": "typedoc --out documentation --name \"Example Component Name\" --hideGenerator --includeDeclarations --exclude \"**/node_modules/**\" src/",
+    "document": "typedoc --out documentation --name \"UI Infrastructure\" --hideGenerator --includeDeclarations --exclude \"**/node_modules/**\" src/",
     "compile": "rollup -c",
     "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
     "build": "yarn run clean && yarn run compile",
@@ -25,7 +25,9 @@
   },
   "license": "ISC",
   "dependencies": {
-    "react": "^18.1.0"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.9"
