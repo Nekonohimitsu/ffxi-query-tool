@@ -5,7 +5,6 @@ const config = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    //'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
     'plugin:jest/recommended',
@@ -29,6 +28,9 @@ const config = {
     },
   },
   settings: {
+    "react": {
+      "version": "detect"
+    },
     'unicorn/filename-case': ['warn', { case: 'kebabCase'}],
     'react/display-name': 0, // Turning off this requirement, as it only fails during tests with mocked classes.
     'jsdoc/no-undefined-types': 0, //JSDOC doesn't follow Typescript imports at this time.

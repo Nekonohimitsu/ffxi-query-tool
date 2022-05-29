@@ -14,16 +14,16 @@ export default {
         {
             file: pkg.module,
             format: 'es',
-            compact: true
-        }
-   ],
-   plugins: [
-       resolve(),
-       commonjs({
-           include: /node_modules/,
-       }),
-       typescript({
-           typescript: require('typescript'),
-       })
-   ]
+            compact: true,
+        },
+    ],
+    plugins: [
+        resolve(),
+        commonjs({
+            include: /node_modules/,
+        }),
+        typescript({
+            typescript: require('typescript'),
+        }),
+    ],
 };

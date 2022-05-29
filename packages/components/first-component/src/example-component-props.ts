@@ -1,5 +1,3 @@
-export interface ExampleComponentProps {
-    id: number
+export default interface ExampleComponentProps {
+    id: number;
 }
-
-export default ExampleComponentProps;
