@@ -1121,5 +1121,5 @@ function configureStore(options) {
 }
 // src/index.ts
 N();var store = configureStore({
-    reducer: {}
+    reducer: {},
 });export{store as FFXIQueryToolStore};

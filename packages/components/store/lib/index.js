@@ -1136,7 +1136,7 @@ function configureStore(options) {
 N();
 
 var store = configureStore({
-    reducer: {}
+    reducer: {},
 });
 
 exports.FFXIQueryToolStore = store;
