@@ -6,6 +6,7 @@ class StandardApp extends React.Component {
     public render(): React.ReactNode {
         return (
             <Provider store={FFXIQueryToolStore}>
+                <div>Hello</div>
             </Provider>
         );
     }
