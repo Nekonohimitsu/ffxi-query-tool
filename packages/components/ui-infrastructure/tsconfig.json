@@ -13,8 +13,7 @@
       "esModuleInterop": true,
       "noImplicitAny": true,
       "noImplicitReturns": true,
-      "noImplicitThis": true,
-      "skipLibCheck": true
+      "noImplicitThis": true
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/__tests__/*"]
