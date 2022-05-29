@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf ./output",
+    "clean": "rimraf ./dist",
     "start": "webpack-dev-server --progress --port 8082 --host 0.0.0.0",
-    "compile": "yarn install && yarn clean && mkdirp ./output && webpack",
+    "compile": "yarn install && yarn clean && mkdirp ./dist && webpack",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier --write *.{js,jsx,ts,tsx,json}"
   },
