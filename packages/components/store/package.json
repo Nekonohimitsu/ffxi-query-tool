@@ -8,7 +8,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json --coverage --passWithNoTests",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
-    "document": "typedoc --out documentation --name \"FFXI Query Tool Store\" --hideGenerator --includeDeclarations --exclude \"**/node_modules/**\" src/",
+    "document": "typedoc --out documentation --name \"FFXI Query Tool Store\" --hideGenerator --exclude \"**/node_modules/**\" src/",
     "compile": "rollup -c",
     "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
     "build": "yarn run clean && yarn run compile",

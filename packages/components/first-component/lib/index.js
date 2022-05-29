@@ -2803,7 +2803,7 @@ function requireReact_development () {
 var React = /*@__PURE__*/getDefaultExportFromCjs(react.exports);
 
 var ExampleComponent = function (props) {
-    return (React.createElement("div", null, props.id));
+    return React.createElement("div", null, props.id);
 };
 
 exports.ExampleComponent = ExampleComponent;
