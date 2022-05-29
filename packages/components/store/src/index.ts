@@ -1,1 +1,1 @@
-export { default as FFXIQueryToolStore } from './store'
+export { store as FFXIQueryToolStore } from './app/store'
