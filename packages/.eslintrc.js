@@ -1,5 +1,3 @@
-const { ModuleScope } = require("@typescript-eslint/scope-manager");
-
 const config = {
   extends: [
     'eslint:recommended',
