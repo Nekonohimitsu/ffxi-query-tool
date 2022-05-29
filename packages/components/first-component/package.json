@@ -1,0 +1,33 @@
+{
+  "name": "@ffxi-query-tool/first-component",
+  "version": "1.0.0",
+  "description": "An example component",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json --coverage --passWithNoTests",
+    "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
+    "document": "typedoc --out documentation --name \"Example Component Name\" --hideGenerator --exclude \"**/node_modules/**\" src/",
+    "compile": "rollup -c",
+    "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
+    "build": "yarn run clean && yarn run compile",
+    "clean": "shx rm -rf lib documentation",
+    "prepare": "yarn run build"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "Neko",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nekonohimitsu/ffxi-query-tool.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9"
+  }
+}

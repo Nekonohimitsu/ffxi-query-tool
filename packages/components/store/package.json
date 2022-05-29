@@ -1,0 +1,36 @@
+{
+  "name": "@ffxi-query-tool/store",
+  "version": "1.0.0",
+  "description": "Common store for the FFXI Query Tool program",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json --coverage --passWithNoTests",
+    "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
+    "document": "typedoc --out documentation --name \"FFXI Query Tool Store\" --hideGenerator --exclude \"**/node_modules/**\" src/",
+    "compile": "rollup -c",
+    "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
+    "build": "yarn run clean && yarn run compile",
+    "clean": "shx rm -rf lib documentation",
+    "prepare": "yarn run build"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "Neko",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nekonohimitsu/ffxi-query-tool.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "react": "^18.1.0",
+    "react-redux": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-redux": "^7.1.24"
+  }
+}
