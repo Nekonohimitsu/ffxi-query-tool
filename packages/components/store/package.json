@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "module": "lib/index.esm.js",
   "scripts": {
-    "test": "jest --config jestconfig.json --coverage",
+    "test": "jest --config jestconfig.json --coverage --passWithNoTests",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
     "document": "typedoc --out documentation --name \"FFXI Query Tool Store\" --hideGenerator --includeDeclarations --exclude \"**/node_modules/**\" src/",
     "compile": "rollup -c",

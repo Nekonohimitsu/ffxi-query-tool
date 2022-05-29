@@ -5,7 +5,7 @@ const config = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
+    //'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
     'plugin:jest/recommended',
