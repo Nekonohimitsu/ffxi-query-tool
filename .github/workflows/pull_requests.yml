@@ -26,7 +26,7 @@ jobs:
       - name: Build Packages and Application
         run: yarn build
       - name: Run ESLint
-        run: yarn lint.
+        run: yarn lint
       - name: Display Coverage
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
