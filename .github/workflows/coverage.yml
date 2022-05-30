@@ -14,12 +14,14 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Dependencies
         run: yarn install --force
+      - name: Run Tests
+        run: yarn test
       - name: Display Coverage
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           package-manager: yarn
           test-script: yarn test
-          skip-step: install
+          skip-step: all
       - name: Update Coverage Badges
         run: yarn createBadge
       - name: Commit Updates to Badges
