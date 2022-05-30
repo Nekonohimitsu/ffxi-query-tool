@@ -7,11 +7,11 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
-    concurrency: build_stage
     permissions:
       checks: write
       pull-requests: write
     steps:
+      - uses: actions/checkout@v3
       - name: Display Coverage
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
