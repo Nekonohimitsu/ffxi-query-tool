@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import ExampleComponent from '../src/example-component';
+import { ExampleComponent } from '../src/example-component';
 import React from 'react';
 
 describe('Basic Tests', () => {
