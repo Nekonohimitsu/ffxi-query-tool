@@ -22,22 +22,25 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: 'yarn'
   install:
     runs-on: ubuntu-latest
     needs: setup
     steps:
+      - uses: actions/checkout@v3
       - run: yarn install --force
   build:
     runs-on: ubuntu-latest
     needs: install
     steps:
+      - uses: actions/checkout@v3
       - run: yarn build
   lint:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - run: yarn lint
+      - uses: actions/checkout@v3
+      - run: yarn lint
   coverage:
     runs-on: ubuntu-latest
     needs: build
@@ -45,5 +48,5 @@ jobs:
       checks: write
       pull-requests: write
     steps:
-        - uses: actions/checkout@v1
-        - uses: ArtiomTr/jest-coverage-report-action@v2
+      - uses: actions/checkout@v3
+      - uses: ArtiomTr/jest-coverage-report-action@v2
