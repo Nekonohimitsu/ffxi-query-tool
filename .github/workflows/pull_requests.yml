@@ -27,11 +27,14 @@ jobs:
         run: yarn build
       - name: Run ESLint
         run: yarn lint
+      - name: Run Tests
+        run: yarn test
       - name: Display Coverage
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           package-manager: yarn
           test-script: yarn test
+          skip-step: all
       - name: Update Coverage Badges
         run: yarn createBadge
       - name: Commit Updates to Badges
