@@ -17,9 +17,9 @@ jobs:
         with:
           package-manager: yarn
           test-script: yarn test
-      - name: Update Coverage Stamps
-        run: yarn createBadge
       - name: Update Coverage Badges
+        run: yarn createBadge
+      - name: Commit Updates to Badges
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Updating Coverage Badges in README
