@@ -1,5 +1,5 @@
 const config = {
-    extends: '../../.eslintrc.js',
+    extends: '../.eslintrc.js',
 };
 
 module.exports = config;

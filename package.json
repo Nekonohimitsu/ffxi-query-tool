@@ -3,7 +3,7 @@
     "private": true,
     "workspaces": [
         "packages/**",
-        "ffxi-query-tool/**"
+        "ffxi-query-tool-app/**"
     ],
     "scripts": {
         "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier write *.{js,jsx,ts,tsx,json}",
