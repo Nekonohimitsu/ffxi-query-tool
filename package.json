@@ -9,7 +9,7 @@
         "build": "npx oao run-script --tree --parallel --ignore-src **/node_modules/** build",
         "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier write *.{js,jsx,ts,tsx,json}",
         "lint": "npx oao run-script --ignore-src {**/node_modules/**} lint",
-        "test": "jest --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json",
+        "test": "jest --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json --ci",
         "createBadge": "make-coverage-badge --output-path \"coverage.svg\""
     },
     "devDependencies": {
