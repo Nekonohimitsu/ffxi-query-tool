@@ -6,8 +6,10 @@
         "ffxi-query-tool-app/**"
     ],
     "scripts": {
+        "build": "npx oao run-script --tree --parallel --ignore-src **/node_modules/** build",
         "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier write *.{js,jsx,ts,tsx,json}",
-        "lint": "npx oao run-script --ignore-src {**/node_modules/**} lint"
+        "lint": "npx oao run-script --ignore-src {**/node_modules/**} lint",
+        "test": "npx oao run-script --ignore-src {**/node_modules/**} test"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^22.0.0",
