@@ -1,0 +1,27 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: 'Run Tests / Display Coverage'
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: write
+      actions: write
+    steps:
+      - name: Display Coverage
+        uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          package-manager: yarn
+          test-script: yarn test
+      - name: Update Coverage Stamps
+        run: yarn createBadge
+        uses: stefanzweifel/git-auto-commit-action@v4
+          with: 
+            commit_message: Updating Coverage Badges in README
