@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "jest --config jestconfig.json --coverage --passWithNoTests",
+    "test": "jest --config jestconfig.json --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json",
     "clean": "rimraf ./dist",
     "start": "webpack-dev-server --progress --port 8082 --host 0.0.0.0",
     "build": "yarn clean && mkdirp ./dist && webpack",

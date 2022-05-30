@@ -1,19 +1,8 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "./lib/", //path to output directory
-    "sourceMap": true, //allow sourcemap support
-    "strictNullChecks": true, // enable strict null checks
-    "module": "es6", //specify module code generation
-    "jsx": "react", //user typescript to transpile jsx to js
-    "target": "es5", //specify ECMAScript target version
-    "allowJs": false, //allow a partial TypeScript and JavaScript codebase
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "declaration": false
   },
-  "include": ["src", "../packages/components/neko-ui-infrastructure/src/standard-app.tsx"],
+  "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
