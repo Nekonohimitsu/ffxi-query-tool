@@ -12,11 +12,14 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: yarn install --force
       - name: Display Coverage
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           package-manager: yarn
           test-script: yarn test
+          skip-step: install
       - name: Update Coverage Badges
         run: yarn createBadge
       - name: Commit Updates to Badges
