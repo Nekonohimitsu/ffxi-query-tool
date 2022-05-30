@@ -30,3 +30,4 @@ jobs:
     - run: yarn build
     - run: yarn lint
     - run: yarn test
+    - uses: ArtiomTr/jest-coverage-report-action@v2.0.7
