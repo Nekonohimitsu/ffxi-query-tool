@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./dist",
     "start": "webpack-dev-server --progress --port 8082 --host 0.0.0.0",
-    "compile": "yarn install && yarn clean && mkdirp ./dist && webpack",
+    "build": "yarn clean && mkdirp ./dist && webpack",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier --write *.{js,jsx,ts,tsx,json}"
   },
@@ -16,19 +16,13 @@
     "url": "https://github.com/Nekonohimitsu/ffxi-query-tool.git"
   },
   "dependencies": {
-    "@ffxi-query-tool/ui-infrastructure": "../packages/components/ui-infrastructure/lib"
+    "@ffxi-query-tool/ui-infrastructure": "1.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "5.0.0",
-    "eslint": "^8.16.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mkdirp": "^1.0.4",
-    "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.3.0",
-    "typescript": "^4.7.2",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
