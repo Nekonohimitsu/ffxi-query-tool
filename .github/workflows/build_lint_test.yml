@@ -29,5 +29,11 @@ jobs:
     - run: yarn install --force
     - run: yarn build
     - run: yarn lint
-    - run: yarn test
-    - uses: ArtiomTr/jest-coverage-report-action@v2.0.7
+  coverage:
+      permissions:
+        checks: write
+        pull-requests: write
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v1
+          - uses: ArtiomTr/jest-coverage-report-action@v2
