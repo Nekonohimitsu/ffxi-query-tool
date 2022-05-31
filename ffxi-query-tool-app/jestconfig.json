@@ -4,7 +4,7 @@
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
-    "collectCoverageFrom": ["src/**/*.{js,ts,jsx,tsk}"],
+    "collectCoverageFrom": ["src/**/*.{js,ts,jsx,tsx}"],
     "coveragePathIgnorePatterns": ["<rootDir>/src/index.ts", "<rootDir>/node_modules/"],
     "collectCoverage": true
 }
