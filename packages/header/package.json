@@ -1,14 +1,14 @@
 {
-  "name": "@ffxi-query-tool/first-component",
+  "name": "@ffxi-query-tool/header",
   "version": "1.0.0",
-  "description": "An example component",
+  "description": "Component for the Header of the application",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.esm.js",
   "scripts": {
     "test": "jest --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
-    "document": "typedoc --out documentation --name \"Example Component Name\" --hideGenerator --exclude \"**/node_modules/**\" src/",
+    "document": "typedoc --out documentation --name \"Header\" --hideGenerator --exclude \"**/node_modules/**\" src/",
     "compile": "rollup -c",
     "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
     "build": "yarn run clean && yarn run compile",
@@ -25,11 +25,14 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.4"
   },
   "peerDependencies": {
-    "react": "^18.1.0"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.12"
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5"
   }
 }

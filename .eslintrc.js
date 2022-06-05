@@ -17,7 +17,7 @@ const config = {
     node: true,
     es6: true
   },
-  plugins: ['@typescript-eslint', 'react', 'jest', 'jsdoc', 'eslint-plugin-tsdoc', 'spellcheck', 'unicorn'],
+  plugins: ['@typescript-eslint', 'react', 'jest', 'jsdoc', 'eslint-plugin-tsdoc', 'spellcheck', 'unicorn', 'react-hooks'],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the user of imports
@@ -29,6 +29,8 @@ const config = {
     "react": {
       "version": "detect"
     },
+    'react-hooks/rules-of-hooks': "error",
+    'react-hooks/ehaustive-deps': "warn",
     'unicorn/filename-case': ['warn', { case: 'kebabCase'}],
     'react/display-name': 0, // Turning off this requirement, as it only fails during tests with mocked classes.
     'jsdoc/no-undefined-types': 0, //JSDOC doesn't follow Typescript imports at this time.
