@@ -25,7 +25,11 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@material-ui/core": "^4.12.4"
+    "@babel/core": "^7.18.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3"
   },
   "peerDependencies": {
     "react": "^18.1.0",
@@ -34,5 +38,11 @@
   "devDependencies": {
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5"
+  },
+  "resolutions": {
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "@types/react": "^18.0.12",
+      "@types/react-dom": "^18.0.5"
   }
 }

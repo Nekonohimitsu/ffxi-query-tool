@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import StandardApp from './standard-app';
 
 const InitApplication = (): void => {
@@ -15,7 +15,8 @@ const InitApplication = (): void => {
 
     document.body.appendChild(rootElement);
 
-    render(<StandardApp />, rootElement);
+    const root = createRoot(rootElement);
+    root.render(<StandardApp />);
 };
 
 export default InitApplication;
