@@ -12,6 +12,7 @@
     "compile": "rollup -c",
     "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
     "build": "yarn run clean && yarn run compile",
+    "build-dev": "yarn build",
     "clean": "shx rm -rf lib documentation",
     "prepare": "yarn run build"
   },
