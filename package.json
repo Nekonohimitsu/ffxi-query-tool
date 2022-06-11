@@ -6,7 +6,7 @@
         "ffxi-query-tool-app/**"
     ],
     "scripts": {
-        "start": "cd ffxi-query-tool-app && webpack-dev-server --progress --port 8082 --host 0.0.0.0",
+        "start": "yarn --cwd ./ffxi-query-tool-app start",
         "build": "npx oao run-script --tree --parallel --ignore-src **/node_modules/** build",
         "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier write *.{js,jsx,ts,tsx,json}",
         "lint": "npx oao run-script --ignore-src {**/node_modules/**} lint",

@@ -1,1 +1,0 @@
-node: cd ffxi-query-tool-app && yarn start
