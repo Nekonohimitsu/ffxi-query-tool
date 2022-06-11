@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@ffxi-query-tool/ui-infrastructure": "1.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
   },
   "devDependencies": {
@@ -32,9 +34,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mkdirp": "^1.0.4",
     "rimraf": "^3.0.2",
-    "ts-loader": "^9.3.0",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "ts-loader": "^9.3.0"
   },
   "browserslist": {
     "production": [
