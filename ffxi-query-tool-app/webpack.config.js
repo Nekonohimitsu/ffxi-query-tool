@@ -1,9 +1,9 @@
 const path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   entry: './src/index.tsx',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -16,9 +16,9 @@ module.exports = {
     static: './dist',
   },
   plugins: [
-    new HtmlWebpackPlugin({title: 'FFXI Query Tool'}),
-    new FaviconsWebpackPlugin({
-      logo: "./resources/logo.png"
+    new HtmlWebpackPlugin({
+      title: 'FFXI Query Tool',
+      favicon: './resources/logo.png'
     })
   ],
   resolve: {
