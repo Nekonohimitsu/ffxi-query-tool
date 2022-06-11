@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { createRoot } from 'react-dom/client';
+import { render } from 'react-dom';
 import StandardApp from './standard-app';
 
 const InitApplication = (): void => {
@@ -14,9 +14,8 @@ const InitApplication = (): void => {
     rootElement.style.setProperty('padding', '0');
 
     document.body.appendChild(rootElement);
-
-    const root = createRoot(rootElement);
-    root.render(<StandardApp />);
+    
+    render(<StandardApp/>, rootElement);
 };
 
 export default InitApplication;

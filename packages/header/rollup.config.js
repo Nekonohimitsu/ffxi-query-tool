@@ -20,7 +20,7 @@ export default {
     plugins: [
         resolve(),
         commonjs({
-            include: /node_modules/,
+            include: /node_modules/
         }),
         typescript({
             typescript: require('typescript'),

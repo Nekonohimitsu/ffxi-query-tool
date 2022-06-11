@@ -1,22 +1,16 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import {Button, Toolbar, AppBar} from '@material-ui/core'; //importing material ui component
 
-const styles = {
-    root: {
-      borderRadius: 12,
-      backgroundColor: "blue"
-    }
-  };
 
 // Functional Component
 const Header = () => {
     return (
-        <Typography>Hello</Typography>
+        <div>Hello</div>
         // <AppBar position='static'>
+        // <Button>Hello</Button>
         //     <Toolbar>React Material UI Example</Toolbar>
         // </AppBar>
     );
 };
 
-export default withStyles(styles)(Header);
+export default Header;
