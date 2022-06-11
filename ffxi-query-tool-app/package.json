@@ -16,7 +16,8 @@
     "url": "https://github.com/Nekonohimitsu/ffxi-query-tool.git"
   },
   "dependencies": {
-    "@ffxi-query-tool/ui-infrastructure": "1.0.0"
+    "@ffxi-query-tool/ui-infrastructure": "1.0.0",
+    "webpack-dev-server": "^4.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -34,7 +35,6 @@
     "ts-loader": "^9.3.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
   },
   "browserslist": {
     "production": [
