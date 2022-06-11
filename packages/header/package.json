@@ -1,14 +1,14 @@
 {
-  "name": "@ffxi-query-tool/first-component",
+  "name": "@ffxi-query-tool/header",
   "version": "1.0.0",
-  "description": "An example component",
+  "description": "Component for the Header of the application",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.esm.js",
   "scripts": {
     "test": "jest --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
-    "document": "typedoc --out documentation --name \"Example Component Name\" --hideGenerator --exclude \"**/node_modules/**\" src/",
+    "document": "typedoc --out documentation --name \"Header\" --hideGenerator --exclude \"**/node_modules/**\" src/",
     "compile": "rollup -c",
     "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
     "build": "yarn run clean && yarn run compile",
@@ -25,6 +25,8 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3"
   },
   "peerDependencies": {
     "react": "^16.8.0",
@@ -37,9 +39,9 @@
     "@types/react-dom": "^16.8.0"
   },
   "resolutions": {
-      "react": "^16.8.0",
-      "react-dom": "^16.8.0",
-      "@types/react": "^16.8.0",
-      "@types/react-dom": "^16.8.0"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0"
   }
 }

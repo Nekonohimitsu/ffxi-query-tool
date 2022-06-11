@@ -14,8 +14,8 @@ const InitApplication = (): void => {
     rootElement.style.setProperty('padding', '0');
 
     document.body.appendChild(rootElement);
-
-    render(<StandardApp />, rootElement);
+    
+    render(<StandardApp/>, rootElement);
 };
 
 export default InitApplication;

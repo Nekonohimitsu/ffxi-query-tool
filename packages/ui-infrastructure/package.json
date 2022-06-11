@@ -26,12 +26,23 @@
   "license": "ISC",
   "dependencies": {
     "@ffxi-query-tool/store": "1.0.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "@ffxi-query-tool/header": "1.0.0",
     "react-redux": "^8.0.2"
   },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "devDependencies": {
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.5"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0"
+  },
+  "resolutions": {
+      "react": "^16.8.0",
+      "react-dom": "^16.8.0",
+      "@types/react": "^16.8.0",
+      "@types/react-dom": "^16.8.0"
   }
 }

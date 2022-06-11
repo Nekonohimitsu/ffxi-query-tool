@@ -5,8 +5,10 @@
   "scripts": {
     "test": "jest --config jestconfig.json --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json",
     "clean": "rimraf ./dist",
-    "start": "webpack-dev-server --progress --port 8082 --host 0.0.0.0",
-    "build": "yarn clean && mkdirp ./dist && webpack",
+    "dev": "webpack-dev-server --progress --port 8082 --host 0.0.0.0",
+    "start": "node server.js",
+    "build-dev": "yarn clean && mkdirp ./dist && webpack",
+    "build": "webpack --mode production",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier --write *.{js,jsx,ts,tsx,json}"
   },
@@ -16,7 +18,8 @@
     "url": "https://github.com/Nekonohimitsu/ffxi-query-tool.git"
   },
   "dependencies": {
-    "@ffxi-query-tool/ui-infrastructure": "1.0.0"
+    "@ffxi-query-tool/ui-infrastructure": "1.0.0",
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
@@ -38,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+      "react": "^16.8.0",
+      "react-dom": "^16.8.0",
+      "@types/react": "^16.8.0",
+      "@types/react-dom": "^16.8.0"
   }
 }

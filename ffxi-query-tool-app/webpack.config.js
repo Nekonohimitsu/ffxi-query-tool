@@ -10,16 +10,14 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-      },
-    ],
-  },
+      }]},
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
   },
   plugins: [new HtmlWebpackPlugin({title: 'Development'})],
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
     filename: '[name].js',
