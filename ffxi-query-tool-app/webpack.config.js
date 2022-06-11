@@ -15,7 +15,12 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  plugins: [new HtmlWebpackPlugin({title: 'Development'})],
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'FFXI Query Tool',
+      favicon: './resources/logo.png'
+    })
+  ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
   },

@@ -7,7 +7,9 @@
     ],
     "scripts": {
         "start": "cd ./ffxi-query-tool-app && yarn start",
+        "dev": "yarn --cwd ./ffxi-query-tool-app dev",
         "build": "npx oao run-script --tree --parallel --ignore-src **/node_modules/** build",
+        "build-dev": "npx oao run-script --tree --parallel --ignore-src **/node_modules/** build-dev",
         "prettier:write": "npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier write *.{js,jsx,ts,tsx,json}",
         "lint": "npx oao run-script --ignore-src {**/node_modules/**} lint",
         "pipelineTest": "jest --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json --ci",
