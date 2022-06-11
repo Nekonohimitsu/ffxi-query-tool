@@ -22,7 +22,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
-    "favicons": "^7.0.0-beta.4",
+    "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
     "html-webpack-plugin": "^5.5.0",
     "mkdirp": "^1.0.4",
