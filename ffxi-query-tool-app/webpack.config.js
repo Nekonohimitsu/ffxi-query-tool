@@ -7,7 +7,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(ts?|tsx?)?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       }]},
@@ -22,7 +22,10 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'], 
+    alias: {
+      react: path.resolve('./node_modules/react')
+    }
   },
   output: {
     filename: '[name].js',
