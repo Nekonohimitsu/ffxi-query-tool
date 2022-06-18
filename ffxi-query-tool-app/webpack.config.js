@@ -22,10 +22,7 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'], 
-    alias: {
-      react: path.resolve('./node_modules/react')
-    }
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
     filename: '[name].js',

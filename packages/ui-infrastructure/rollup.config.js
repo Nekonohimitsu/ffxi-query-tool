@@ -26,4 +26,5 @@ export default {
             typescript: require('typescript'),
         }),
     ],
+    external: ['react', 'react-dom']
 };
