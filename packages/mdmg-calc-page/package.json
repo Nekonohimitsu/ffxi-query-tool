@@ -1,14 +1,14 @@
 {
-  "name": "@ffxi-query-tool/ui-infrastructure",
+  "name": "@ffxi-query-tool/mdmg-calc-page",
   "version": "1.0.0",
-  "description": "Component houses the framework of the UI",
+  "description": "Page for calculating magic damage",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.esm.js",
   "scripts": {
     "test": "jest --coverage --passWithNoTests --outputFile=report.json --testLocationInResults --json",
     "lint": "tsc --noEmit && eslint --fix --ext .js,.jsx,.ts,.tsx ./",
-    "document": "typedoc --out documentation --name \"UI Infrastructure\" --hideGenerator --exclude \"**/node_modules/**\" src/",
+    "document": "typedoc --out documentation --name \"MDMG Calculator Page\" --hideGenerator --exclude \"**/node_modules/**\" src/",
     "compile": "rollup -c",
     "audit": "yarn audit --registry=https://registry.npmjs.org --json > audit-results.json",
     "build": "yarn run clean && yarn run compile",
@@ -26,10 +26,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@ffxi-query-tool/store": "1.0.0",
-    "@ffxi-query-tool/header": "1.0.0",
-    "@ffxi-query-tool/mdmg-calc-page": "1.0.0",
-    "react-redux": "^8.0.2"
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3"
   },
   "peerDependencies": {
     "react": "^16.8.0",
@@ -39,7 +37,6 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "@types/react": "^16.8.0",
-    "@types/react-dom": "^16.8.0",
-    "@types/react-redux": "^7.1.24"
+    "@types/react-dom": "^16.8.0"
   }
 }

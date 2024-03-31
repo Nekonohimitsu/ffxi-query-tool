@@ -6,9 +6,7 @@ import {Button, Toolbar, AppBar} from '@material-ui/core'; //importing material 
 const Header = () => {
     return (
         <AppBar position='static'>
-            <Button>Hello</Button>
-            <div>Hello, World (Just for Moink)</div>
-            <Toolbar>React Material UI Example</Toolbar>
+            <Toolbar>FFXI Query Tool</Toolbar>
         </AppBar>
     );
 };

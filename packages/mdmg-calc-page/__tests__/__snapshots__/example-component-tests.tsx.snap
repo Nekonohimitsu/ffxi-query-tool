@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Tests it should handle my example component 1`] = `
+<div>
+  2
+</div>
+`;
